@@ -1,0 +1,43 @@
+.toast {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+
+  min-width: 280px;
+  max-width: 360px;
+
+  padding: 14px 18px;
+
+  border-radius: 14px;
+
+  background: #236932;
+
+  color: white;
+
+  z-index: 99999;
+
+  transform: translateX(120%);
+  transition: .3s;
+}
+
+.toast.show {
+  transform: translateX(0);
+}.toast {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  min-width: 260px;
+
+  max-width: 400px;
+
+  padding: 14px 20px;
+
+  border-radius: 18px;
+
+  z-index: 99999;
+}

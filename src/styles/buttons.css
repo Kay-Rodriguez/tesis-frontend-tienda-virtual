@@ -1,0 +1,63 @@
+/* ============================================================
+   BOTONES
+============================================================ */
+.btn {
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-primary {
+  background: radial-gradient(circle at 0% 0%, #38bdf8, #0b5bb5);
+  color: white;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(56, 189, 248, 0.55);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  color: #e5e7eb;
+}
+
+.btn-outline:hover {
+  background: rgba(148, 163, 184, 0.15);
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-checkout {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 999px;
+  padding: .9rem 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  background: linear-gradient(135deg, #fb923c, #f97316);
+  box-shadow: 0 15px 40px rgba(247,126,12,0.45);
+  transition: .25s ease;
+  cursor: pointer;
+}
+
+.btn-checkout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(247,126,12,0.7);
+}

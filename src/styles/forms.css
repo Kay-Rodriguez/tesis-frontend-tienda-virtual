@@ -1,0 +1,55 @@
+/* ============================================================
+   FORMULARIOS
+============================================================ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #cbd5f5;
+}
+
+.input,
+.select {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.65rem 0.9rem;
+  color: #e2e8f0;
+  transition:
+    box-shadow .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+  background: rgba(15, 23, 42, 0.98);
+  outline: none;
+}
+
+.auth-left .input {
+  margin-bottom: 0.5rem;
+}
+
+.auth-left .btn-primary {
+  margin-top: 0.7rem !important;
+}

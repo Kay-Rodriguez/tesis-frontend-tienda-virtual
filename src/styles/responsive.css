@@ -1,0 +1,365 @@
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 950px) {
+  .cart-page {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Perfil en 1 columna */
+@media (max-width: 750px) {
+  .profile-page {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Ajustes de títulos y tamaños */
+@media (max-width: 550px) {
+  .order-body {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-title {
+    font-size: 0.75rem;
+  }
+}
+
+/* Evita que la imagen del perfil rompa layout */
+@media (max-width: 600px) {
+  .profile-cover {
+    max-height: 260px;
+  }
+
+  .navbar {
+    padding: 0.6rem 1rem !important;
+  }
+}
+
+/* NAVBAR móvil */
+@media (max-width: 850px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0f172a;
+    flex-direction: column;
+    padding: 1rem 0;
+    display: none;
+    border-top: 1px solid rgba(255,255,255,.1);
+    margin-top: 10px;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .nav-mobile-user {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .nav-mobile-user .nav-avatar {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 0.6rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+
+  .navbar-title {
+    font-size: 0.75rem;
+  }
+}
+
+/* Hero pequeño */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+
+  .home-slide {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-slider-window {
+    margin: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+}
+
+/* Categorías */
+@media (max-width: 480px) {
+  .category-card {
+    min-width: 130px !important;
+    padding: 0.6rem !important;
+  }
+}
+
+/* Avatar navbar móvil */
+@media (max-width: 768px) {
+  .nav-mobile-user {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+  }
+
+  .nav-avatar.desktop,
+  .navbar-username {
+    display: none;
+  }
+}
+
+/* Chatbot móvil */
+@media (max-width: 768px) {
+  .chatbot-full {
+    width: 100%;
+    right: -100%;
+  }
+
+  .chatbot-full.open {
+    right: 0;
+  }
+
+  .chatbot-toggle {
+    top: auto;
+    bottom: 20px;
+    border-radius: 999px;
+    right: 20px;
+  }
+}
+/* ============================================================
+   NAVBAR RESPONSIVE FIX
+============================================================ */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar {
+    min-height: 74px;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 74px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 1rem;
+    background:
+      radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.18), transparent 45%),
+      rgba(2, 6, 23, 0.98);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-menu a,
+  .nav-mobile-auth .btn,
+  .nav-mobile-action {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1rem;
+    border-radius: 16px;
+  }
+
+  .navbar-menu a {
+    background: rgba(15, 23, 42, 0.74);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    text-align: center;
+  }
+
+  .nav-mobile-auth {
+    display: grid;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-mobile-action {
+    display: inline-flex;
+    margin-top: 0.5rem;
+  }
+
+  .nav-mobile-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.85rem;
+    color: #e0f2fe;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-logo-img img {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .navbar-sub {
+    display: none;
+  }
+
+  .navbar-title {
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+/* ============================================================
+   HOME RESPONSIVE
+============================================================ */
+@media (max-width: 980px) {
+  .layout-main {
+    width: 100%;
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .grid-two {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .chips-row {
+    justify-content: center;
+  }
+
+  .home-slide {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-slide-image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .layout-main {
+    padding: 1.2rem 0.9rem 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .home-search-container {
+    flex-direction: column;
+  }
+
+  .home-search-container .btn {
+    width: 100%;
+  }
+
+  .home-slider-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+  }
+
+  .home-slider-arrow.left {
+    left: 0.45rem;
+  }
+
+  .home-slider-arrow.right {
+    right: 0.45rem;
+  }
+
+  .category-card {
+    min-width: 128px;
+    min-height: 86px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 850px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 640px) {
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    min-width: unset;
+    min-height: 60px;
+
+    font-size: 1rem;
+  }
+
+  .chips-row {
+    justify-content: center;
+  }
+
+  .chip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 220px;
+    height: 220px;
+  }
+}
